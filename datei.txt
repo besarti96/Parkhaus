@@ -1,0 +1,4 @@
+ Ampel: ROT
+Beleuchtung: 100%
+ Ampel: ROT
+Beleuchtung: 100%
