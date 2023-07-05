@@ -107,7 +107,7 @@ void Zeit_und_Datum(int *vTag, int *vMonat, int *vJahr, int *vStunde, int *vMinu
 }
 
 
-//Menü
+//MenÃ¼
 
 void menu(){
 	
@@ -131,7 +131,7 @@ int PGR_Starten(int *Parkhaus){
 				}
 			}
 
-	if (x > 0){														//Erste anzeige... freie PLätze.
+	if (x > 0){														//Erste anzeige... freie PLÃ¤tze.
 				cout << "Freie Platze: "<< x << endl<< endl;
 				if(x > 0){
 				char ampel[6] = {"Gruen"};
@@ -146,7 +146,7 @@ int PGR_Starten(int *Parkhaus){
 
 			switch(auswahl)
 			{
-				case 1 : //Hier Fahren die Leute ins Parkhaus rein.
+				case 1 : //Hier Fahren die Leute ins Parkhaus rein. wir inkrementieren das array Parkhaus
 				for(int e; e < 50; e++){
 					if(Parkhaus[e] == 0){
 					
@@ -177,8 +177,8 @@ int PGR_Starten(int *Parkhaus){
 			}
 
 	}
-	else{//Keine Parkplätze mehr
-		cout << "Keine Freien Parkplätze mehr. good bye";
+	else{//Keine ParkplÃ¤tze mehr
+		cout << "Keine Freien ParkplÃ¤tze mehr. good bye";
 		ende = 0;
 	}
 
@@ -191,7 +191,7 @@ int PGR_Starten(int *Parkhaus){
 	system("PAUSE");
 	system("CLS");
 	
-	return Parkhaus[0]; //Eigendlich müsste hier Parkhaus Returnt werden.
+	return Parkhaus[0]; //Eigendlich mÃ¼sste hier Parkhaus Returnt werden.
 	
 }
 
@@ -210,9 +210,9 @@ int einstellungen(int *Parkhaus, int *vStunde){
 	do{
 	
 	cout << "Einstellungen\n-----------------\n";
-	cout << "1 = Belegte Besucher-Parkplätze\n";
-	cout << "2 = Total Vermietete-Parkplätze\n";
-	cout << "3 = Belegte Besucher-Parkplätze\n";
+	cout << "1 = Belegte Besucher-ParkplÃ¤tze\n";
+	cout << "2 = Total Vermietete-ParkplÃ¤tze\n";
+	cout << "3 = Belegte Besucher-ParkplÃ¤tze\n";
 	cout << "4 = Parkhausbeleuchtung in %\n";
 	cout << "0 = Einstellungen beenden\n\n";
 	
@@ -220,16 +220,16 @@ int einstellungen(int *Parkhaus, int *vStunde){
 	
 	switch(menu){
 		case 1: system("CLS"); 
-		cout << "Totale Besucher-Parkplätze = 50" << endl;
+		cout << "Totale Besucher-ParkplÃ¤tze = 50" << endl;
 		system("PAUSE");
 		break;
 		case 2: system("CLS");
-		cout << "Total Vermietete-Parkplätze: ";
+		cout << "Total Vermietete-ParkplÃ¤tze: ";
 		cout << zahler << endl;
 		system("PAUSE");
 		break;
 		case 3: system("CLS");
-		cout << "Belegte Besucher-Parkplätze = "<< 50 - zahler << endl;
+		cout << "Belegte Besucher-ParkplÃ¤tze = "<< 50 - zahler << endl;
 		system("PAUSE");
 		break;
 		case 4: system("CLS");
